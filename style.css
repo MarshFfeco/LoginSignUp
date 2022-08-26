@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root {
+    --cor_1: #70CC8C;
+    --cor_2: #248F44;
+    --cor_3: #114521;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'noto Sans', sans-serif;
+}
+
+/*UTILITARIOS*/
+.centralizacao-flex{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header{
+    width: 100vw;
+    height: 5vh;
+}
+
+main {
+    width: 100vw;
+    height: 85vh;
+    padding-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #201b2c;
+}
+
+.middle{
+    width: 30%;
+    height: 100%;
+}
+
+.left{
+    width: 30%;
+    height: 100%;
+}
+
+.right{ 
+    width: 40%;
+    height: 100%;
+}
+
+h1{
+    font-size: 2em;
+
+    color: #F2055C;
+}
+  
+h2{
+    padding-bottom: 20px;
+
+    color: #F2055C;
+
+    font-size: 2em;
+    font-weight: 800;
+    margin: 0;
+}
+
+.card{
+    width: 80%;
+    height: auto;
+
+    padding: 20px 15px;
+
+    background: #2f2841;
+    
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #00000056;
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+
+    background-color: black;
+
+}
+
+.textfield{
+    width: 100%;
+    margin: 5px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.textfield > input {
+    width: 100%;
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #514869;
+    color: whitesmoke;
+
+    font-size: 12pt;
+
+    box-shadow: 0 10px 40px #00000056;
+
+    outline: none;
+}
+
+.textfield > input::placeholder{
+    color: #f0ffff94;
+}
+
+.textfield > label {
+    margin-bottom: 5px;
+
+    color: whitesmoke;
+}
+
+.btn {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px -12px #F2BBC9;
+
+    outline: none;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    color: #2b134b;
+    background-color: #F2DFE2;
+
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 950px){
+    main{
+        height: 220vh;
+
+        flex-direction: column;
+    }
+
+    .left { width: 80%; }
+    .middle { width: 80%; }
+
+    .card{
+        width: 100%;
+        margin: 20px 0px;
+        
+        padding: 20px 35px;
+    }
+
+    .textfield{
+        width: 100%;
+    }
+
+    .centralizacao-flex{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    main{
+        height: 200vh;
+
+        flex-direction: column;
+    }
+
+    .card{
+        width: 50vw;
+    }
+
+    .right{
+        display: none;
+    }
+}
